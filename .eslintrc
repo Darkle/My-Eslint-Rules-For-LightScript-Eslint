@@ -97,10 +97,6 @@
   		"error",
   		"never"
   	],
-  	"space-before-function-paren": [
-  		"error",
-  		{"asyncArrow": "always"}
-  	],
   	"template-curly-spacing": [
   		"error",
   		"always"
