@@ -1,5 +1,5 @@
 {
-  "parser": "lightscript-eslint",
+  "parser": "@oigroup/lightscript-eslint",
   "plugins": [
     "react"
   ],
@@ -13,54 +13,44 @@
     "es6": true,
     "jquery": true
   },
-  "globals": {
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "experimentalObjectRestSpread": true,
+      "modules": true
+    }
   },
   "rules": {
-    "callback-return": "error",
-    "comma-spacing": [
+    "react/require-render-return": 0,
+    "handle-callback-err": "error",
+    "key-spacing": [
       "error",
       {
-        "before": false,
-        "after": true
+        "beforeColon": false,
+        "afterColon": true
       }
     ],
-    "comma-style": [
-      "error",
-      "last"
-    ],
-    "comma-dangle": ["error", "never"],
-    "getter-return": "error",
-    "handle-callback-err": "error",
-    "jsx-quotes": [
-      "error",
-      "prefer-single"
-    ],
+    "no-await-in-loop": "error",
     "no-buffer-constructor": "error",
     "no-caller": "error",
+    "no-class-assign": "error",
     "no-console": 0,
+    "no-const-assign": "error",
+    "no-debugger": "error",
+    "no-dupe-class-members": "error",
     "no-duplicate-imports": "error",
     "no-else-return": "error",
     "no-empty-function": "error",
-    "no-eq-null": "error",
     "no-eval": "error",
     "no-extend-native": "error",
-    "no-extra-bind": "error",
     "no-floating-decimal": "error",
     "no-implied-eval": "error",
     "no-invalid-this": "error",
-    "no-iterator": "error",
-    "no-label-var": "error",
-    "no-labels": "error",
     "no-loop-func": "error",
-    "no-mixed-requires": [
-      "error",
-      {
-        "allowCall": true,
-        "grouping": true
-      }
-    ],
+    "no-mixed-spaces-and-tabs": "error",
     "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
-    "no-multi-str": "error",
     "no-native-reassign": [
       "error",
       {
@@ -69,13 +59,11 @@
         ]
       }
     ],
-    "no-nested-ternary": "error",
     "no-new": "error",
     "no-new-func": "error",
     "no-new-require": "error",
     "no-new-symbol": "error",
     "no-new-wrappers": "error",
-    "no-octal-escape": "error",
     "no-param-reassign": "error",
     "no-path-concat": "error",
     "no-plusplus": [
@@ -85,51 +73,37 @@
       }
     ],
     "no-process-exit": "error",
-    "no-proto": "error",
-    "no-restricted-syntax": [
-      "error",
-      "ForStatement",
-      "ForInStatement",
-      "ForOfStatement",
-      "LabeledStatement",
-      "WithStatement"
-    ],
-    "no-script-url": "error",
-    "no-self-compare": "error",
     "no-sequences": "error",
     "no-shadow": "error",
-    "no-shadow-restricted-names": "error",
     "no-spaced-func": "error",
-    "no-this-before-super": "error",
     "no-throw-literal": "error",
-    "no-undef-init": "error",
     "no-undefined": "error",
-    "no-unexpected-multiline": "error",
-    "no-unneeded-ternary": "error",
     "no-useless-call": "error",
-    "no-useless-concat": "error",
-    "no-useless-constructor": "error",
     "no-whitespace-before-property": "error",
-    "no-with": "error",
     "object-shorthand": "error",
     "prefer-promise-reject-errors": "error",
-    "prefer-rest-params": "error",
-    "prefer-spread": "error",
-    "require-yield": "error",
+  	"prefer-spread": "error",
+  	"prefer-template": "error",
+  	"require-yield": "error",
     "quotes": [
-      "warn",
-      "single",
-      {
-        "avoidEscape": true,
-        "allowTemplateLiterals": true
-      }
-    ],
-    "react/require-render-return": 0,
-    "semi": ["error", "never"],
-    "vars-on-top": "error",
-    "wrap-iife": [
-      "error",
-      "any"
-    ]
+  		"warn",
+  		"single",
+  		{
+  			"avoidEscape": true,
+  			"allowTemplateLiterals": true
+  		}
+  	],
+  	"semi": [
+  		"error",
+  		"never"
+  	],
+  	"space-before-function-paren": [
+  		"error",
+  		{"asyncArrow": "always"}
+  	],
+  	"template-curly-spacing": [
+  		"error",
+  		"always"
+  	]
   }
 }
