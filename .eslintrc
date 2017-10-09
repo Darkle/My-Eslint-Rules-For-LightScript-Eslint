@@ -4,8 +4,7 @@
     "react"
   ],
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "eslint:recommended"
   ],
   "env": {
     "browser": true,
@@ -23,7 +22,6 @@
     }
   },
   "rules": {
-    "react/require-render-return": 0,
     "handle-callback-err": "error",
     "key-spacing": [
       "error",
@@ -79,7 +77,6 @@
     "no-undefined": "error",
     "no-useless-call": "error",
     "no-whitespace-before-property": "error",
-    "object-shorthand": "error",
     "prefer-promise-reject-errors": "error",
   	"prefer-spread": "error",
   	"prefer-template": "error",
