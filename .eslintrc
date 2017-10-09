@@ -73,7 +73,6 @@
       }
     ],
     "no-process-exit": "error",
-    "no-sequences": "error",
     "no-shadow": "error",
     "no-spaced-func": "error",
     "no-throw-literal": "error",
@@ -97,6 +96,7 @@
   		"error",
   		"never"
   	],
+    "space-before-function-paren": 0,
   	"template-curly-spacing": [
   		"error",
   		"always"
