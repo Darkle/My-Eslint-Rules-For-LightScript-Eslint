@@ -1,7 +1,8 @@
 {
   "parser": "@oigroup/lightscript-eslint",
   "plugins": [
-    "react"
+    "react",
+    "jsx"
   ],
   "extends": [
     "eslint:recommended"
