@@ -6,6 +6,9 @@
   "extends": [
     "eslint:recommended"
   ],
+  "globals": {
+    "h": true
+  },
   "env": {
     "browser": true,
     "node": true,
@@ -18,7 +21,8 @@
     "ecmaFeatures": {
       "impliedStrict": true,
       "experimentalObjectRestSpread": true,
-      "modules": true
+      "modules": true,
+      "jsx": true
     }
   },
   "rules": {
