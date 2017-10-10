@@ -16,6 +16,11 @@
     "es6": true,
     "jquery": true
   },
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
   "parserOptions": {
     "ecmaVersion": 2017,
     "sourceType": "module",
@@ -27,6 +32,14 @@
     }
   },
   "rules": {
+    "jsx/uses-factory": [1, {
+      "pragma": "h"
+    }],
+    "jsx/factory-in-scope": [1, {
+      "pragma": "h"
+    }],
+    "jsx/mark-used-vars": 1,
+    "jsx/no-undef": 1,
     "handle-callback-err": "error",
     "key-spacing": [
       "error",
