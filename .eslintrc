@@ -8,7 +8,8 @@
     "eslint:recommended"
   ],
   "globals": {
-    "h": true
+    "h": true,
+    "ISDEV": true
   },
   "env": {
     "browser": true,
@@ -39,7 +40,7 @@
       "pragma": "h"
     }],
     "jsx/mark-used-vars": 1,
-    "jsx/no-undef": 1,
+    "jsx/no-undef": 0,
     "handle-callback-err": "error",
     "key-spacing": [
       "error",
@@ -57,7 +58,6 @@
     "no-debugger": "error",
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "error",
-    "no-else-return": "error",
     "no-empty-function": "error",
     "no-eval": "error",
     "no-extend-native": "error",
