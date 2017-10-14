@@ -61,7 +61,6 @@
     "no-empty-function": "error",
     "no-eval": "error",
     "no-extend-native": "error",
-    "no-floating-decimal": "error",
     "no-implied-eval": "error",
     "no-invalid-this": "error",
     "no-loop-func": "error",
